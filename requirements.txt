@@ -1,0 +1,98 @@
+Coinfox Feature Expansion Test Task
+Overview
+Duration: 8 horus
+Project: Coinfox - Cryptocurrency Portfolio Tracker
+Focus: Blockchain & UI Enhancement
+Current Project Analysis
+Coinfox is a React-based crypto portfolio tracker featuring:
+· Block-stack authentication for decentralized identity
+· High-charts integration for price visualization
+· Multi-currency support (30+ fiat currencies)
+· Portfolio management with cost basis tracking
+· Import/export functionality
+· Responsive web design
+Project
+https://github.com/Gobla-Dapp/coinfox
+Test Task: Real-Time Portfolio Alerts & Enhanced Analytics
+Objective
+Implement a real-time portfolio alert system with enhanced analytics dashboard to improve user experience and portfolio monitoring capabilities.
+Requirements
+1. Portfolio Alert System (30~60 minutes)
+l Price Alert Component (src/Components/PriceAlert.js)
+o Create a new component for setting price alerts
+o Allow users to set alerts when coins reach specific price thresholds
+o Include alert types: "Above" and "Below" price targets
+o Store alert preferences in Blockstack storage
+l Alert Management UI
+o Add alert settings to the existing coin detail pages
+o Display active alerts in the main portfolio view
+o Include alert status (Active/Triggered/Dismissed)
+2. Enhanced Analytics Dashboard (30~60 minutes)
+l Portfolio Performance Metrics (src/Components/PortfolioAnalytics.js)
+o 24h/7d/30d portfolio performance tracking
+o Best/worst performing coins in portfolio
+o Portfolio diversification metrics (by market cap, sector)
+o Risk assessment indicators
+ 
+l Interactive Chart Enhancements
+o Add portfolio value over time chart
+o Implement comparison charts (portfolio vs. market indices)
+o Add technical indicators (moving averages, RSI)
+Technical Implementation Guidelines
+File Structure
+src/
+├── Components/
+│   ├── PriceAlert.js          # New: Price alert management
+│   ├── PortfolioAnalytics.js  # New: Enhanced analytics
+│   └── AlertNotification.js   # New: Alert display component
+├── Utils/
+│   └── alertHelpers.js        # New: Alert logic utilities
+└── Pages/
+    └── Analytics.js           # New: Analytics dashboard page
+Key Features to Implement
+l Alert System
+o Use WebSocket or polling for real-time price updates
+o Integrate with existing Blockstack storage
+o Implement alert triggering logic
+l Analytics Dashboard
+o Extend existing Highcharts implementation
+o Add portfolio performance calculations
+o Implement data aggregation for metrics
+l UI/UX Enhancements
+o Maintain existing design language
+o Ensure mobile responsiveness
+o Follow React best practices
+Success Criteria
+· [ ] Price alert component renders correctly
+· [ ] Alerts can be set and managed for any coin
+· [ ] Analytics dashboard displays portfolio metrics
+· [ ] Enhanced charts show portfolio performance
+· [ ] All new features integrate with existing Blockstack auth
+· [ ] UI maintains consistency with current design
+Bonus Points (if time permits)
+· Implement push notifications for alerts
+· Add portfolio rebalancing suggestions
+· Create exportable analytics reports
+· Add social sharing of portfolio performance
+Submission
+· Working code with all required components
+· Brief explanation of implementation approach
+· Any additional features implemented beyond requirements
+· Notes on potential improvements or optimizations
+Evaluation Criteria
+l Code Quality (40%)
+o Clean, readable React components
+o Proper state management
+o Error handling
+l Feature Implementation (35%)
+o Complete alert system functionality
+o Working analytics dashboard
+o Integration with existing codebase
+l UI/UX (25%)
+o Consistent design language
+o Responsive layout
+o User experience flow
+Budget
+	$400
+
+Note: This task focuses on expanding the existing blockchain-integrated portfolio tracker with practical features that enhance user engagement and portfolio monitoring capabilities. The 8 hours timeframe encourages efficient, focused development while maintaining code quality.
